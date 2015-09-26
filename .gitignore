@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FireShell
 # http://getfireshell.com
 # @author Todd Motto
@@ -43,3 +44,7 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+=======
+.sass-cache
+*.css.map
+>>>>>>> bd6837402a3d26623f2c909effa325cb26734268
