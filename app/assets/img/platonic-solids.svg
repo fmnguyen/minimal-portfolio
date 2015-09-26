@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1181.6 299.6" style="enable-background:new 0 0 1181.6 299.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g id="Background">
+</g>
+<g id="Layer_1">
+	<polygon class="st0" points="239,202.3 151,253.1 63,202.3 63,100.6 151,49.8 239,100.6 	"/>
+	<polygon class="st0" points="449,202.3 361,253.1 273,202.3 273,100.6 361,49.8 449,100.6 	"/>
+	<polygon class="st0" points="940.9,233 1031.3,76.4 1121.7,233 	"/>
+	<polyline class="st1" points="63,100.6 150,151.4 239.4,100.7 	"/>
+	<path class="st1" d="M63,101"/>
+	<polyline class="st1" points="150,253 150,151.4 63,202.3 	"/>
+	<polygon class="st0" points="901,202.3 813,253.1 725,202.3 725,100.6 813,49.8 901,100.6 	"/>
+	<polygon class="st1" points="900.9,101 725,100.6 813,253.2 	"/>
+	<path class="st1" d="M857.6,176"/>
+	<polyline class="st1" points="857.6,176 815.5,100.8 769.2,177.2 	"/>
+	<polygon class="st2" points="771.9,121.8 815.5,198.3 859.7,122 	"/>
+	<g>
+		<polygon class="st0" points="537.4,242 486.6,154 537.4,66 639.1,66 689.9,154 639.1,242 		"/>
+		<g>
+			<polygon class="st2" points="555.5,66 541.8,124.6 494.4,167.6 526.9,223.8 588.2,205 649.1,224.7 681.4,168.7 634.7,124.6 
+				622.1,66 			"/>
+		</g>
+	</g>
+	<line class="st2" x1="361" y1="49.8" x2="274.5" y2="202.3"/>
+	<line class="st2" x1="360.9" y1="50" x2="449" y2="202.3"/>
+	<line class="st2" x1="272.9" y1="100.6" x2="360.9" y2="252.9"/>
+	<line class="st2" x1="449" y1="100.6" x2="361" y2="253.1"/>
+</g>
+</svg>

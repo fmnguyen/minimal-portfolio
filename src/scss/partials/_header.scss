@@ -2,9 +2,42 @@
 
 }
 .logo {
-  margin: -100px 0 0 -84px;
-  @include position(absolute, 50% 0 0 50%);
-  img {
-
-  }
+	img {
+		//background-image: url('../img/platonic-solids.svg');
+		background-position: 0 0;
+	}
 }
+
+.icon {
+  background-image: url('../img/header-icons.svg');
+  background-size: cover;
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  &.logo {
+    background-position: 0 0;
+  }
+
+  &.facebook {
+    background-position: -30px 0;
+  }
+
+  &.twitter {
+    background-position: -60px 0;
+  }
+
+  &.pinterest {
+    background-position: -90px 0;
+  }
+
+  &.email {
+    background-position: -120px 0;
+  }
+
+}
+
+.no-svg .icon {
+  background-image: url('../img/header-icons.png') !important;
+}
+
