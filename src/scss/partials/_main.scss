@@ -2,6 +2,15 @@
 
 }
 
+.container {
+	@include breakpoint($lg) { width: 75%;}
+	@include breakpoint($xxlg) {width: 960px} 
+}
+
+.border-left {
+	border-left: 1px #000 solid;
+}
+
 .section {
 	width: 100vw;
 	height: 100vh;
@@ -15,3 +24,69 @@
 	}
 }
 
+#home {
+
+	.row {
+		border-left: 1px #FFF solid;
+		margin-top: 30%;
+	}
+
+	.title {
+		font-size: 3.5em;
+		line-height: 1.5em;
+		vertical-align: text-top;
+		text-transform: uppercase;
+		display: inline-block;
+		margin-left: 30px;
+		margin-top: -20px
+	}
+
+	.border-left {
+		border-left: 1px #FFF solid;
+		height: 40%;
+	}
+}
+
+#work {
+
+	.border-left {
+		h1 {
+			text-transform: uppercase;
+			color: #000;
+			font-size: 3.5em;
+			letter-spacing: 4.0px;
+			text-align: right;
+		}
+	}
+
+	.border-right {
+		border-right: 1px #000 solid;
+		border-top: 1px #000 solid;
+		border-bottom: 1px #000 solid;
+		padding: 80px 15px;
+	}
+
+	.project-card {
+		.project-img {
+
+		}
+
+		.project-desc {
+			position: absolute;
+			left: 50%;
+			bottom: -75%;
+			.project-name {
+				color: #111;
+				font-size: 2.0em;
+				text-transform: uppercase;
+				letter-spacing: 4.0px;
+			}
+			.project-type {
+				color: #999;
+				opacity: 0.8;
+				font-size: 1.15em;
+				margin-top: -0.4em;
+			}
+		}
+	}
+}

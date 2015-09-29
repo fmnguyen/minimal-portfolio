@@ -1,23 +1,28 @@
 html {
 	font-size: 100%;
+	color: #fff;
 }
 
 body, h1, h2, h3, h4, h5, h6, p, a, li, div {
-	font-family: "minion-pro-display", serif;
-	color: #FFFFFF;
+	font-family: "brandon-grotesque",sans-serif;
+	font-style: normal;
+	font-weight: 100;
 }
 
 h1 {
 	font-size: 2.250em;
 	line-height: 2.813em;
-	letter-spacing: 1.3px;
+	letter-spacing: 0.75px;
 }
 
-h2, h3 {
-	font-family: "brandon-grotesque",sans-serif;	
-}
-
-h2 {
+h2{
+	font-family: "brandon-grotesque",sans-serif;
 	font-style: normal;
-	opacity: 1.0;
+	font-weight: 700;
+}
+
+h3 {
+	font-family: "minion-pro-display",serif;
+	font-style: italic;
+	font-weight: 400;
 }
