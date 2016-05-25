@@ -54,20 +54,39 @@
 
       <div class="section" id="work">
 
-        <div class="container border-left">
-          <h1>Portfolio</h1>
-        </div>
+        <div class="container border-left"></div>
 
         <div class="container border-right">
-          <div class="row">
-            <div class="project-card">
+          <h1>Portfolio</h1>
+          <div class="filters-wrapper">
+            <ul class="filters-list">
+              <li id="all" class="filter active"><a href="#">all</a></li>
+              <li id="ux" class="filter"><a href="#">ui/ux</a></li> 
+              <li id="product" class="filter"><a href="#">product</a></li>
+              <li id="human" class="filter"><a href="#">humanitarian</a></li>
+              <li id="branding" class="filter"><a href="#">branding</a></li>
+            </ul>
+          </div>
+          <div class="row projects">
+            <div class="project-card product branding" id="oblige">
               <div class="project-img">
-                  <a class="overlay-toggle" href="#">
+                  <a class="overlay-toggle clearfix" href="#">
                       <img src="assets/img/oblige/jacket1.jpg"/>
                   </a>
               </div>
               <div class="project-desc">
                 <h2 class="project-name">Oblige</h2>
+                <h3 class="project-type">Development &amp; Design</h3>
+              </div>
+            </div>
+            <div class="project-card branding" id="fridgit">
+              <div class="project-img">
+                  <a class="overlay-toggle clearfix" href="#">
+                      <img src="assets/img/fridgit/fridgit-render.png"/>
+                  </a>
+              </div>
+              <div class="project-desc">
+                <h2 class="project-name">Fridgit</h2>
                 <h3 class="project-type">Development &amp; Design</h3>
               </div>
             </div>
@@ -83,7 +102,7 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
+    <script>window.jQuery || document.write('<script src="assets/components/jquery-1.11.3.min.js"><\/script>');</script>
     <script src="assets/js/scripts.min.js"></script>
     <!--<script>
     (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){

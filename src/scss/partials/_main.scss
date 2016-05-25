@@ -3,8 +3,9 @@
 }
 
 .container {
+	@include breakpoint($xs) {width: 95%}
 	@include breakpoint($lg) { width: 75%;}
-	@include breakpoint($xxlg) {width: 960px} 
+	@include breakpoint($xxlg) {width: 1024px} 
 }
 
 .border-left {
@@ -34,7 +35,7 @@
 	.title {
 		font-size: 3.5em;
 		line-height: 1.5em;
-		vertical-align: text-top;
+		color: white;
 		text-transform: uppercase;
 		display: inline-block;
 		margin-left: 30px;
@@ -43,38 +44,150 @@
 
 	.border-left {
 		border-left: 1px #FFF solid;
-		height: 40%;
+		height: 80%;
 	}
 }
 
 #work {
 
 	.border-left {
-		h1 {
-			text-transform: uppercase;
-			color: #000;
-			font-size: 3.5em;
-			letter-spacing: 4.0px;
-			text-align: right;
-		}
+		max-height: 150px;
+		height: 100px;
 	}
 
+	$font-height-md: 30px;
+	$font-height-lg: 40px;
 	.border-right {
+		position: relative;
 		border-right: 1px #000 solid;
 		border-top: 1px #000 solid;
 		border-bottom: 1px #000 solid;
-		padding: 80px 15px;
+		padding: 0 15px 80px 15px;
+
+		h1 {
+			text-transform: uppercase;
+			color: #000;
+			text-align: center;
+			line-height: 1.75em;
+			padding-top: 20px;
+
+			@include breakpoint($md) {
+				text-align: right;
+				font-size: 2.5em;
+				line-height: $font-height-md;
+				letter-spacing: 4.0px;
+			}
+
+			@include breakpoint($xlg) {
+				font-size: 3.5em;
+				line-height: $font-height-lg;
+				letter-spacing: 4.0px;
+				padding-top: 30px;
+			}
+		}
 	}
 
-	.project-card {
-		.project-img {
+	.filters-wrapper {text-align: center;}
 
+	.filters-list {
+		display: inline-block;
+		margin: 0 auto;
+		text-align: left;
+		padding-bottom: 30px;
+
+		@include breakpoint($md) {
+			display: block;
+			margin-top: - $font-height-md - 1; // subtract 1 due to the border
+			margin-left: -15px;
+			padding-bottom: 40px;
+			float: left;	
+		}
+
+		.filter {
+			border: 1px #A2A2A2 solid;
+			display: inline-block;
+			text-transform: uppercase;
+			background-color: #FFF;
+			padding: 1px 10px 5px;
+			&:hover, &.active {
+				border: 1px black solid;
+				background-color: black;
+				cursor: pointer;
+				a {color: white;}
+			}
+			@include transition(all .3s ease);
+			&:first-child {margin-right: 5px;}
+			&:not(:first-child) {margin: 0 5px;}
+			@include breakpoint($md) {padding: 1px 15px 5px;}
+
+			a {
+				pointer-events: none;
+				color: black;
+				font-weight: 700;
+				font-size: 0.5em;
+				letter-spacing: 1px;
+				&:hover {text-decoration: none;}
+			}
+		}
+	}
+
+	.project-card:nth-child(odd) {
+		position: relative;
+		max-width: 60%;
+
+		.project-img {
+			max-width: 80%;
+			max-height: 20%;
+			display: inline-block;
+			img {
+				max-height: 80%;
+				max-width: 100%;
+			}
 		}
 
 		.project-desc {
 			position: absolute;
-			left: 50%;
-			bottom: -75%;
+			right: 5%;
+			top: 30%;
+			@include breakpoint($xlg) { right: 15%;}
+
+			.project-name {
+				color: #111;
+				font-size: 2.0em;
+				text-transform: uppercase;
+				letter-spacing: 4.0px;
+			}
+			.project-type {
+				color: #999;
+				opacity: 0.8;
+				font-size: 1.15em;
+				margin-top: -0.4em;
+			}
+		}
+	}
+
+	.project-card:nth-child(even) {
+		position: relative;
+		float: right;
+		max-width: 60%;
+		max-height: 40%;
+		padding-right: 20px;
+
+		.project-img {
+			max-width: 80%;
+			max-height: 40%;
+			display: inline-block;
+			float: right;
+			img {
+				max-height: 100%;
+				max-width: 100%;
+			}
+		}
+
+		.project-desc {
+			position: absolute;
+			left: 0;
+			top: 40%;
 			.project-name {
 				color: #111;
 				font-size: 2.0em;
